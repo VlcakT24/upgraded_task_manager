@@ -132,7 +132,7 @@ def aktualizovat_ukol():
         print("Neplatná volba")
         return
 
-    sql = "UPDATE ukoly SET stav = %s WHERE id = %s"
+    sql = "UPDATE tasks SET stav = %s WHERE id = %s"
     cursor.execute(sql, (novy, id_ukolu))
     conn.commit()
 
